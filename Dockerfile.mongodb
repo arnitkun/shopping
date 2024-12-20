@@ -1,0 +1,3 @@
+FROM mongo:6.0
+
+CMD ["bash", "-c", "mongod --replSet rs0 --bind_ip_all --port 27017 --noauth & sleep 20 && mongosh --eval 'rs.initiate()' && tail -f /dev/null"]
