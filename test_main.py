@@ -2,9 +2,9 @@ import pytest
 from loguru import logger
 
 
-@pytest.fixture
-def client():
-    return TestClient(app)
+# @pytest.fixture
+# def client():
+#     return TestClient(app)
 
 
 import pytest
